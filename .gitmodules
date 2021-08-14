@@ -1,3 +1,12 @@
 [submodule ".dotfiles/ohmyzsh"]
 	path = .dotfiles/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh/
+[submodule ".dotfiles/ohmyzsh_custom/themes/powerlevel10k"]
+	path = .dotfiles/ohmyzsh_custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule ".dotfiles/ohmyzsh_custom/plugins/zsh-syntax-highlighting"]
+	path = .dotfiles/ohmyzsh_custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule ".dotfiles/ohmyzsh_custom/plugins/zsh-autosuggestions"]
+	path = .dotfiles/ohmyzsh_custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
