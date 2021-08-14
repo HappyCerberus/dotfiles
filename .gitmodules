@@ -1,0 +1,3 @@
+[submodule ".dotfiles/ohmyzsh"]
+	path = .dotfiles/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh/
