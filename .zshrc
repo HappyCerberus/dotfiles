@@ -30,6 +30,10 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+if [ ! -d "$POWERLINE_PATH" ] && type "pip">/dev/null; then
+	export POWERLINE_PATH="$(pip show powerline-status | grep Location: | cut -d " " -f2)/powerline"
+fi
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
