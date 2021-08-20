@@ -15,6 +15,7 @@ set colorcolumn=80
 
 " Powerline settings
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
@@ -44,5 +45,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-noremap <Tab> :bn<CR>
-noremap <S-Tab> :bp<CR>
+noremap <Tab> :tabnext<CR>
+noremap <S-Tab> :tabprevious<CR>
