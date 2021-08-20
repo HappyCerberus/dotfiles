@@ -10,6 +10,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
   # MAC OS
   export PATH=/usr/local/go/bin:$PATH
   export PATH=$HOME/Library/Python/3.8/bin:$PATH
+  export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 elif [[ $OSTYPE == 'linux'* ]]; then
   # LINUX
   export PATH=$HOME/go/bin:$PATH
