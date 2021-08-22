@@ -24,7 +24,7 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 # Alias for managing dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git ssh-agent zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,6 +37,9 @@ fi
 
 # Enable completion for aliases as well
 setopt completealiases
+
+# SSH agent load identities
+zstyle :omz:plugins:ssh-agent identities github
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
