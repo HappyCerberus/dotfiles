@@ -10,9 +10,6 @@
 [submodule ".dotfiles/ohmyzsh_custom/plugins/zsh-autosuggestions"]
 	path = .dotfiles/ohmyzsh_custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
 [submodule ".vim/bundle/vim-better-whitespace"]
 	path = .vim/bundle/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace
@@ -37,3 +34,9 @@
 [submodule ".vim/bundle/vim-startify"]
 	path = .vim/bundle/vim-startify
 	url = https://github.com/mhinz/vim-startify
+[submodule ".vim/bundle/vim-nerdtree-syntax-highlight"]
+	path = .vim/bundle/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+[submodule ".vim/bundle/nerdtree-git-plugin"]
+	path = .vim/bundle/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin
