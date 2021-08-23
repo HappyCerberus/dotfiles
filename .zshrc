@@ -17,14 +17,19 @@ elif [[ $OSTYPE == 'linux'* ]]; then
 fi
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.dotfiles/ohmyzsh"
-export ZSH_CUSTOM="$HOME/.dotfiles/ohmyzsh_custom"
+export ZSH="$HOME/.zshrc.d/ohmyzsh"
+export ZSH_CUSTOM="$HOME/.zshrc.d/ohmyzsh_custom"
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Alias for managing dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+##############################################################################
+# OH MY ZSH PLUGINS
 plugins=(git ssh-agent zsh-autosuggestions zsh-syntax-highlighting)
+
+zstyle :omz:plugins:ssh-agent identities github
+zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,8 +43,6 @@ fi
 # Enable completion for aliases as well
 setopt completealiases
 
-# SSH agent load identities
-zstyle :omz:plugins:ssh-agent identities github
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
